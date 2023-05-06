@@ -1,0 +1,30 @@
+
+package com.mycompany.palindromo;
+
+public class palind {
+    public static void main(String[] args) {
+        
+        palind obj=new palind();
+        System.out.println(obj.palindromo ("oso"));
+    
+      }
+    
+     String palindromo (String cad){
+        String salida = "", aux="";
+        int tam = cad.length(); // Obtienen el numero de caracteres
+       for (int x=tam -1; x>=0; x--){
+           aux=aux + cad.charAt(x); // Devuelve la pocición de l caracter  
+       }
+      if(cad.equals (aux)){
+          salida = "es palindromo";
+      }
+      else {
+      salida="No es palindroma";
+              
+              }
+    
+    salida = " La palabra"+ " " + cad +" "+ salida;
+    return salida;}
+    
+
+}
